@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="form">
+
+      <label for="sellingPrice"> Selling Price :</label>
+      <input type="number" id="sellingPrice" name="price" />
+
+      <label for="productName"> Product Name :</label>
+      <input type="text" name="name" id="productName" />
+
+      <label for="category">Choose a Category</label>
+      <select name="Choose a Category" id="category">
+        <option value="food" selected>Food</option>
+        <option value="Skin Care">Skin Care</option>
+        <option value="Electronics">Electronics</option>
+      </select>
+
+      <button id = "addProductBtn">Add Product</button>
+
+    </div>
+
+    <h1>Products</h1>
+
+    <h2>Electronic Items</h2>
+    <div id="electronicItems"></div>
+
+    <h2>food Items</h2>
+    <div id="foodItems"></div>
+
+    <h2>Skin Care Items</h2>
+    <div id="skinCareItems"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
